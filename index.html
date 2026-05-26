@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sorting Algorithm Visualizer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="bg-circle circle1"></div>
+  <div class="bg-circle circle2"></div>
+
+  <div class="app-container">
+
+    <aside class="sidebar">
+
+      <div class="logo-section">
+        <h1>AlgoViz</h1>
+        <p>Interactive Sorting Visualizer</p>
+      </div>
+
+      <div class="algo-buttons">
+        <button id="generate">Generate Array</button>
+        <button id="bubble">Bubble Sort</button>
+        <button id="selection">Selection Sort</button>
+        <button id="insertion">Insertion Sort</button>
+        <button id="merge">Merge Sort</button>
+        <button id="quick">Quick Sort</button>
+      </div>
+
+      <div class="extra-controls">
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>
+        <button id="bar-view">Bar View</button>
+        <button id="index-view">Index View</button>
+        <button id="sound-toggle">Sound ON</button>
+      </div>
+
+      <div class="slider-container">
+
+        <div class="slider-box">
+          <label>Array Size</label>
+          <input type="range" id="size" min="10" max="80" value="30">
+        </div>
+
+        <div class="slider-box">
+          <label>Speed</label>
+          <input type="range" id="speed" min="1" max="200" value="100">
+        </div>
+
+      </div>
+
+    </aside>
+
+    <main class="main-content">
+
+      <div class="top-header">
+        <div>
+          <h2>Sorting Visualizer Dashboard</h2>
+          <p>Visualize algorithms step-by-step</p>
+        </div>
+      </div>
+
+      <section class="analytics-grid">
+
+        <div class="analytics-card">
+          <p>Algorithm</p>
+          <h3 id="algo-name">None</h3>
+        </div>
+
+        <div class="analytics-card">
+          <p>Time Complexity</p>
+          <h3 id="time">--</h3>
+        </div>
+
+        <div class="analytics-card">
+          <p>Space Complexity</p>
+          <h3 id="space">--</h3>
+        </div>
+
+        <div class="analytics-card">
+          <p>Stable</p>
+          <h3 id="stable">--</h3>
+        </div>
+
+        <div class="analytics-card">
+          <p>Comparisons</p>
+          <h3 id="comparisons">0</h3>
+        </div>
+
+        <div class="analytics-card">
+          <p>Swaps</p>
+          <h3 id="swaps">0</h3>
+        </div>
+
+      </section>
+
+      <section class="visualizer-section">
+        <h2>Visualization</h2>
+
+        <div id="array-container"></div>
+        <div id="index-container"></div>
+      </section>
+
+      <section class="definition-section">
+        <h2>Algorithm Explanation</h2>
+        <p id="definition-text">Click any sorting algorithm.</p>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- ================= SCRIPTS (FIXED ORDER) ================= -->
+  <script src="data/algorithmInfo.js"></script>
+
+<script src="utils/sleep.js"></script>
+<script src="utils/swap.js"></script>
+<script src="utils/pause.js"></script>
+<script src="utils/control.js"></script>
+<script src="utils/analytics.js"></script>
+<script src="utils/barUtils.js"></script>
+<script src="utils/sound.js"></script>
+
+
+
+<script src="algorithms/bubble.js"></script>
+<script src="algorithms/selection.js"></script>
+<script src="algorithms/insertion.js"></script>
+
+<script src="algorithms/quick.js"></script>
+<script src="algorithms/merge.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 

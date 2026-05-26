@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 320px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.logo-section h1 {
+  font-size: 38px;
+  color: #60a5fa;
+}
+
+.logo-section p {
+  color: #cbd5e1;
+}
+
+/* BUTTONS */
+.algo-buttons,
+.extra-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* COLORS */
+#generate { background: #2563eb; }
+#bubble { background: #f97316; }
+#selection { background: #8b5cf6; }
+#insertion { background: #06b6d4; }
+#merge { background: #22c55e; }
+#quick { background: #e11d48; }
+
+#pause { background: #facc15; color: black; }
+#stop { background: #dc2626; }
+#bar-view { background: #0ea5e9; }
+#index-view { background: #14b8a6; }
+#sound-toggle { background: #f59e0b; color: black; }
+
+/* SLIDERS */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slider-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* MAIN */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ANALYTICS */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.analytics-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* VISUALIZER */
+.visualizer-section {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 25px;
+}
+
+/* BAR CONTAINER */
+#array-container {
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* BAR */
+.bar {
+  width: 22px;
+  background: #38bdf8;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  transition: height 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* 🔥 NEW: BAR HOVER EFFECT */
+.bar:hover {
+  background: #60a5fa;
+  transform: scaleY(1.05);
+}
+
+/* INDEX VIEW */
+#index-container {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 18px;
+}
+
+/* FIX: JS uses index-cell (not index-item) */
+.index-cell {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.index-number {
+  color: #38bdf8;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.index-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.active-index {
+  border: 2px solid red;
+}
+
+.sorted-index {
+  border: 2px solid #22c55e;
+}
+
+/* DEFINITION */
+.definition-section {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+ 
+}
+ #time {
+  white-space: pre-line;
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: break-word;
+
+}
