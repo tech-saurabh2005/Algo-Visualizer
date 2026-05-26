@@ -60,7 +60,7 @@ async function bubbleSort() {
       }
     }
 
-    // mark sorted element safely
+    
     renderCurrentView();
     const bars = document.getElementsByClassName("bar");
 
@@ -70,7 +70,7 @@ async function bubbleSort() {
   }
 
   enableControls();
-  // FINAL COLOR PASS
+  
   if (currentView === "bar") {
     const bars = document.getElementsByClassName("bar");
     for (let i = 0; i < array.length; i++) {

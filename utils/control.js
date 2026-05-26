@@ -5,7 +5,7 @@ function disableControls() {
     btn.disabled = true;
   });
 
-  // keep STOP always enabled for safety
+  
   const stopBtn = document.getElementById("stop");
   if (stopBtn) stopBtn.disabled = false;
 }
@@ -15,6 +15,5 @@ function enableControls() {
     btn.disabled = false;
   });
 
-  // optional safety reset
-  //stopSorting = false;
+  
 }

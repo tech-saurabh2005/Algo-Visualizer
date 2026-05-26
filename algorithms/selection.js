@@ -69,7 +69,7 @@ async function selectionSort() {
 
     renderCurrentView();
 
-    // mark sorted safely
+    
     const bars = document.getElementsByClassName("bar");
 
     if (currentView === "bar" && bars[i]) {
@@ -82,7 +82,7 @@ async function selectionSort() {
   }
 
   enableControls();
-  // FINAL COLOR PASS
+  
   if (currentView === "bar") {
     const bars = document.getElementsByClassName("bar");
     for (let i = 0; i < array.length; i++) {

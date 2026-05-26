@@ -18,7 +18,7 @@ function safePlay(audio) {
   }
 }
 
-/* SOUND FUNCTIONS */
+
 function playCompareSound() {
   safePlay(compareSound);
 }

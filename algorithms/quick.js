@@ -26,7 +26,7 @@ document
     }
   });
 
-/* ================= QUICK SORT ================= */
+
 
 async function quickSort(arr, low, high) {
   if (low < high) {
@@ -42,7 +42,7 @@ async function quickSort(arr, low, high) {
   }
 }
 
-/* ================= PARTITION ================= */
+
 
 async function partition(arr, low, high) {
 
